@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="description" content="My second javascript page" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Man Tam code academy - basic javascript 2</title>
+	<script>
+		function calculate(value1, value2, operation) {
+            value1 = parseInt(value1);
+            value2 = parseInt(value2);
+            var result;
+            if (operation == "+") {
+                result = value1 + value2;
+            } else if (operation == "-") {
+                result = value1 - value2;
+            } else if (operation == "*") {
+                result = value1 * value2;
+            } else {
+                result = value1 / value2;
+            }
+            return result;
+        }
+		function getUrlParamValue(paramName) {
+            var params = location.search.split("&")
+            for (var i = 0; i < params.length; i++) {
+                var index = params[i].indexOf(paramName + "=");
+                if (index >= 0) {
+                    return params[i].substr(index + paramName.length + 1);
+                }
+            }
+            return "";
+        }
+	</script>
+</head>
+<body>
+    <a href="">
+        <div id="title"></div>
+    </a>
+	<div id="result"></div>
+	<script>
+        var value1 = getUrlParamValue("v1");
+        var value2 = getUrlParamValue("v2");
+        var operation = getUrlParamValue("o");
+        document.getElementById("result").innerHTML = calculate(value1, value2, operation);
+	</script>
+</body>
+</html>

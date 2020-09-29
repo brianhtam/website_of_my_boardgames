@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="description" content="My Category page" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Man Tam code academy - HTML basics </title>
+	<link rel="icon" href="icon.gif" type="image/gif"/>
+	<style>
+        body {
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        .header {
+            text-align: center;
+            background-color: #F7D358;
+        }
+        .footer {
+            text-align: center;
+            background-color: #F7D358;
+            height: 50px;
+            line-height: 50px;
+            vertical-align: middle;
+        }
+        .category {
+            border: 1px solid #ccc;
+            width: 250px;
+            margin: 40px 20px;
+            float: left;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #ccc;
+        }
+        .category .top-section img {
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: 0px 5px 10px #ccc;
+        }
+        .category .bottom-section {
+            padding: 10px;
+            height: 150px;
+        }
+        .category .bottom-section div {
+            padding: 5px 0px;
+        }
+        .label {
+            color: darkred;
+        }
+        .green {
+            color: green;
+        }
+	</style>
+</head>
+<body>
+    <div class="header">
+        <img src="img/site-logo.png"/>
+    </div>
+    <div id="category1" class="category">
+        <div id="top1" class="top-section">
+            <img src="img/bulls.jpg">
+        </div>
+        <div id="bottom1" class="bottom-section">
+            <div class="team-name">Chicago Bulls</div>
+            <div class="label">National Champion</div>
+            <div class="value">1991, 1992, 1993, 1996, 1997, 1998</div>
+            <div class="label">Overall Ranking</div>
+            <div class="bubble">25</div>
+        </div>
+    </div>
+    <div id="category2" class="category">
+        <div id="top2" class="top-section">
+            <img src="img/celtics.jpg">
+        </div>
+        <div id="bottom2" class="bottom-section">
+            <div class="team-name">Boston Celtics</div>
+            <div class="label green yellow">National Champion</div>
+            <div class="value">2000</div>
+            <div class="label">Overall Ranking</div>
+            <div class="bubble">15</div>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+    <div class="bottom-section label">This is another bottom section</div>
+    <div class="footer">
+        MT.com - an example site!
+    </div>
+</body>
+</html>

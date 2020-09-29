@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="Main Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brian's Boardgames - Main Page</title>
+    <link rel="icon" href="dice_favicon.gif" type="image/gif"/>
+    <style>
+        body {
+            margin: 0px;
+            font-family:Arial, 'Times New Roman', Times, serif;
+            background: url(img/chess-background.jpg);
+            background-repeat: repeat-y;
+            background-size: cover;
+        }
+        .header {
+            text-align: center;
+            background-color: white;
+        }
+        .footer {
+            text-align: center;
+            background-color: white;
+            height: 50px;
+            line-height: 50px;
+            vertical-align: bottom;
+        }
+        .category {
+            border: 2px solid blue;
+            border-radius: 10px;
+            width: 250px;
+            float: left;
+            box-shadow: 10px 10px 8px  black;
+            margin: 40px 20px;
+            background-color:white;
+        }
+        .category:hover {
+            box-shadow: 0px 0px 10px 5px yellow;
+        }
+        .category .bottom-section {
+            padding: 10px;
+            height: 220px;
+        }
+        .category .bottom-section div {
+            padding: 5px 0px;
+        }
+        .category img {
+            border-radius: 10px 10px 0px 0px;
+
+        }
+        .label {
+            color: darkblue;
+            font-weight: bold;
+        }
+        .smallText {
+            font-weight:lighter;
+            font-style: italic;
+            font-size:smaller;
+        }
+        .page-content {
+            margin: 0px auto;
+            max-width: 600px
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="img/logo_360_width.png" />
+    </div>
+    <div class="page-content">
+        <div class="category">
+            <div>
+                <img src="img/online_game.png">
+            </div>
+            <div id="bottom1" class="bottom-section">
+                <div class="label">Online Boardgames</div>
+                <div>Games you can play from an internet browser</div>
+                <div class="label">number of games: ##</div>
+                <div class=smallText>
+                    Stuck at home but you want to play games with friends? 
+                    Sheltered in place due to a pandemic? Fear not!
+                    This is a collection of online boardgaming options!
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <div>
+                <img src="img/physical_boardgames.png">
+            </div>
+            <div class=bottom-section>
+                <div class="label">Physical Boardgames</div>
+                <div>A detailed breakdown of my boardgame collection</div>
+                <div class="label">number of games: ##</div>
+                <div class=smallText>
+                    Would you like to meet up and play a boardgame? 
+                    I've collected quite a few games over the years,
+                    let me know if there's anything on this list you would like to play with me!
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+    <div class="footer">
+        Brian's Boardgames - Copyright
+    </div>
+</body>
+</html>

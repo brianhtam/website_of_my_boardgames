@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="description" content="My first javascript page" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Man Tam code academy - basic javascript 1</title>
+	<script>
+        var one = "this is an apple";
+        var two = 12;
+        var three = true;
+        three = false;
+        three = 1;
+        var one = "1";
+        var One = "not 1";
+        var string = 'this is string 1';
+        var string1 = "I don't like javascript";
+        var multipleLine = `
+            this is a multi line variable
+            this is my 2nd line
+        `;
+        var string = "this is 1st line " +
+        "this is a 2nd line";
+        var daniel = {
+            gender: "boy",
+            height: "too short",
+            grades: "A",
+        }
+        var samuel = {
+            gender: "girl",
+            height: "too tall",
+            grades: "C",
+            firstName: "Samuel",
+            lastName: "Tam",
+            fullName: function () {
+                return firstName + " " + lastName;
+            }
+        }
+        var array1 = [
+            daniel, samuel
+        ]
+        var firstName = "carmel case";
+        var thisIsMyName = "carmal case";
+        var this_is_my_name = "snake case";
+        var ThisIsMyVariable = "pascal case";
+        function add() {
+            var first = document.getElementById("1").value;
+            var second = document.getElementById("2").value;
+            var firstInt = parseInt(first);
+            var secondInt = parseInt(second);
+            document.getElementById("result").innerHTML = firstInt + secondInt;
+        }
+        function sub() {
+            var first = document.getElementById("1").value;
+            var second = document.getElementById("2").value;
+            var firstInt = parseInt(first);
+            var secondInt = parseInt(second);
+            document.getElementById("result").innerHTML = firstInt - secondInt;
+        }
+        function mult() {
+            var first = document.getElementById("1").value;
+            var second = document.getElementById("2").value;
+            var firstInt = parseInt(first);
+            var secondInt = parseInt(second);
+            document.getElementById("result").innerHTML = firstInt * secondInt;
+        }
+        function div() {
+            var first = document.getElementById("1").value;
+            var second = document.getElementById("2").value;
+            var firstInt = parseInt(first);
+            var secondInt = parseInt(second);
+            document.getElementById("result").innerHTML = firstInt / secondInt;
+        }
+        function power() {
+            var first = document.getElementById("1").value;
+            var second = document.getElementById("2").value;
+            var firstInt = parseInt(first);
+            var secondInt = parseInt(second);
+            document.getElementById("result").innerHTML = firstInt ** secondInt;
+        }
+        function one(input, value) {
+            document.getElementById(input).value += value;
+        }
+	</script>
+</head>
+<body>
+    <input id="1" type="text"><br/>
+    <input id="2" type="text"><br/>
+    <input type="button" value="ADD" onclick="add()"/>
+    <input type="button" value="SUBTRACT" onclick="sub()"/>
+    <input type="button" value="MULTIPLY" onclick="mult()"/>
+    <input type="button" value="DIVISION" onclick="div()"/>
+    <input type="button" value="^" onclick="power()"/>
+    <br/><br/>
+    <input type="button" value="1" onclick="one('1','1')"/>
+    <input type="button" value="2" onclick="one('1','2')"/>
+    <input type="button" value="3" onclick="one('1','3')"/>
+
+    <p>
+        <div id="result"></div>
+    </p>
+</body>
+</html>
